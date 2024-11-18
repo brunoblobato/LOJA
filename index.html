@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" />
+    <title>Lojá - Os melhores produtos você encontra aqui</title>
+</head>
+<body class="black-body">
+
+    <div class="top-bar">
+        FRETE GRÁTIS PARA TODO O BRASIL!
+    </div>
+    
+    <header>
+        <div class="logo-container">
+            <img src="logo-loja.png" alt="Logo" class="logo">
+        </div>
+
+        <div class="search-box">
+            <input id="searchInput" type="text" placeholder="Buscar produtos...">
+            <button id="searchButton">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                    <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0" />
+                </svg>
+            </button>
+        </div>
+
+    <div>
+        <div class="menu-buttons">
+            <button id="homeButton">Home</button>
+            <button id="loginButton">Login</button>
+        </div>
+        
+        <!-- Popup de Login -->
+        <div class="popup-container" id="loginPopup">
+            <div class="popup">
+                <button class="close-btn" id="closeLoginPopup">Fechar</button>
+                <h1>Login</h1>
+                <form action="#" method="post">
+                    <label for="username">Usuário:</label>
+                    <input type="text" id="username" name="username" required>
+        
+                    <label for="password">Senha:</label>
+                    <input type="password" id="password" name="password" required>
+        
+                    <button type="submit">Entrar</button>
+                </form>
+            </div>
+        </div>
+               
+
+        <div class="shopping-cart">
+            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-bag" viewBox="0 0 16 16">
+                <path d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1m3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1z" />
+            </svg>
+            <span class="shopping-cart-quantity">0</span>
+        </div>
+    </div>
+    
+    </header>
+
+    <aside class="categories-sidebar">
+        <h2>Categorias</h2>
+        <div class="categories"></div>
+    </aside>
+
+    <main>
+        <h2>Nossos produtos</h2>
+        <section class="products-list"></section>
+    </main>
+
+    <div class="cartTab">
+        <h1>Carrinho de Compras</h1>
+        <div class="listCart"></div> <!-- Lista dos itens do carrinho -->
+        <div class="footer"> <!-- Rodapé do carrinho -->
+            <div class="btn">
+                <button class="close">FECHAR</button>
+                <button class="checkOut">FINALIZAR COMPRA</button>
+            </div>
+        </div>
+    </div>
+      
+
+    <footer>
+        <div><img class="alignnone size-full wp-image-508" src="https://websitedemos.net/recycled-shoe-store/wp-content/uploads/sites/983/2021/11/payment-icons.png" alt="" width="246" height="20" /></div>
+        <br>
+        <div><p>&copy; LOJÁ, 2024. Todos os direitos reservados.</p></div> 
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
